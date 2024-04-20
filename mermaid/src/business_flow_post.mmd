@@ -1,0 +1,89 @@
+graph TD
+    A(コンテンツ作成) --> B(vook_sns（instagram）)
+    B --> C(未投稿STOCK投稿)
+    C --- C1(投稿日時決定) --- C2(投稿)
+    B --> D(知識解説投稿)
+    D --- E(リバイバル投稿)
+    E --- E1(投稿対象決定) --- E2(投稿日時決定) --- E3(投稿作成) --- E4(投稿)
+    D --- F(新規投稿)
+    F --- F1(投稿対象決定) --- F2(投稿日時決定) --- F3(投稿作成) --- F4(投稿)
+    B --> G(判別フロー投稿)
+    G --- H(小澤)
+    H --- H1(投稿日時決定) --- H2(投稿テキスト作成) --- H3(レビュー) --- H4(canva作成) --- H5(投稿作成) --- H6(投稿)
+    G --- I(古賀)
+    I --- I1(投稿日時決定) --- I2(投稿テキスト作成) --- I3(レビュー) --- I4(canva作成) --- I5(投稿作成) --- I6(投稿)
+    G --- J(水溜)
+    J --- J1(投稿日時決定) --- J2(投稿テキスト作成) --- J3(レビュー) --- J4(canva作成) --- J5(投稿作成) --- J6(投稿)
+
+    C2 --> K(vook_sns（tiktok）)
+    E4 --> K
+    F4 --> K
+    H6 --> K
+    I6 --> K
+    J6 --> K
+    K --- K1(投稿日時決定) --- K2(投稿)
+
+    H2 --> L(vook_contents（magazine）)
+    I2 --> L
+    J2 --> L
+    L --- L1(記事作成) --- L2(イラスト参照元調査) --- L3(イラスト作成依頼) --- L4(イラスト作成) --- L5(イラストレビュー) --- L6(イラスト反映)--- L7(投稿日時決定) --- L8(投稿)
+
+    classDef blueStyle fill:#1E90FF, color:#FFF;
+    classDef redStyle fill:#FF6347, color:#FFF;
+    classDef greenStyle fill:#32CD32, color:#FFF;
+    classDef purpleStyle fill:#800080, color:#FFF;
+    classDef grayStyle fill:#808080, color:#FFF;
+
+    class C blueStyle;
+    class C1 blueStyle;
+    class C2 redStyle;
+
+    class I blueStyle;
+    class I1 blueStyle;
+    class I2 blueStyle;
+    class I3 redStyle;
+    class I4 blueStyle;
+    class I5 blueStyle;
+    class I6 redStyle;
+
+    class K blueStyle;
+    class K1 blueStyle;
+    class K2 blueStyle;
+
+    class D redStyle;
+    class E redStyle;
+    class E1 redStyle;
+    class E2 redStyle;
+    class E3 redStyle;
+    class E4 redStyle;
+    class F redStyle;
+    class F1 redStyle;
+    class F2 redStyle;
+    class F3 redStyle;
+    class F4 redStyle;
+
+    class J redStyle;
+    class J1 redStyle;
+    class J2 redStyle;
+    class J3 grayStyle;
+    class J4 redStyle;
+    class J5 redStyle;
+    class J6 redStyle;
+
+    class H greenStyle;
+    class H1 greenStyle;
+    class H2 greenStyle;
+    class H3 redStyle;
+    class H4 greenStyle;
+    class H5 greenStyle;
+    class H6 redStyle;
+
+    class L greenStyle;
+    class L1 greenStyle;
+    class L2 greenStyle;
+    class L3 greenStyle;
+    class L4 purpleStyle;
+    class L5 greenStyle;
+    class L6 greenStyle;
+    class L7 greenStyle;
+    class L8 greenStyle;
