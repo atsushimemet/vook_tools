@@ -16,7 +16,7 @@ if [ "$ENV_NAME" = "dev" ]; then
   DB_NAME="vook_web_v3_development"
 elif [ "$ENV_NAME" = "prd" ]; then
   DB_HOST="vook-rails-db.ctutkiavfpne.ap-northeast-1.rds.amazonaws.com"
-  DB_NAME="vook_web_v3_development"
+  DB_NAME="vook_web_v3_production"
 else
   echo "Invalid env_name: $ENV_NAME"
   echo "env_name should be 'dev' or 'prd'."
